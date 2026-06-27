@@ -8,8 +8,12 @@ const NEWS = [
     date: "2026-06-27",
     title: "Witchspire Patch 0.1.3 Live — EA Launch Recap and 2026-2027 Roadmap",
     tag: "Update",
-    excerpt:
-      "Witchspire patch 0.1.3 dropped on June 25, just over two weeks after the game's Steam Early Access launch on June 10. Envar Games has been shipping patches at a rapid pace, and 0.1.3 continues the focus on stability and quality-of-life improvements based on community feedback from the EA launch window. The bigger news is the official roadmap revealed during a June 17 AMA livestream: Witchspire's Early Access period is planned to run through 2026 and into early 2027, with multiple major content updates adding new biomes, creatures, crafting systems, and a co-op multiplayer mode. The developers have been transparent about what is and is not in the current build — multiple biomes and creatures are playable now, but several planned systems are still in development. For players considering picking up Witchspire during the Steam Summer Sale, the current state offers a solid foundation with active development. The community has been particularly positive about the crafting flow and creature design.",
+    summary: "Witchspire patch 0.1.3 dropped on June 25, just over two weeks after the game's Steam Early Access launch on June 10. Envar Games has been shipping patches at a rapid pace, and 0.1.3 continues the focus on stability and quality-of-life improvements based on community feedback from the EA launch window.",
+    body: [
+      "The bigger news is the official roadmap revealed during a June 17 AMA livestream: Witchspire's Early Access period is planned to run through 2026 and into early 2027, with multiple major content updates adding new biomes, creatures, crafting systems, and a co-op multiplayer mode.",
+      "The developers have been transparent about what is and is not in the current build — multiple biomes and creatures are playable now, but several planned systems are still in development. For players considering picking up Witchspire during the Steam Summer Sale, the current state offers a solid foundation with active development.",
+      "The community has been particularly positive about the crafting flow and creature design, with common feedback requesting more content depth and balance tuning — both of which are addressed in the roadmap.",
+    ],
   },
   {
     date: '2026-06-26',
