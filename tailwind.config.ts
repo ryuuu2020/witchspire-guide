@@ -9,18 +9,18 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        abyss: '#f5f4ed',
-        'abyss-light': '#faf9f5',
-        'abyss-elevated': '#ffffff',
+        abyss: '#141210',
+        'abyss-light': '#0d0b0a',
+        'abyss-elevated': '#1c1a16',
         'accent-primary': '#c96442',
-        'accent-primary-dim': '#a85030',
+        'accent-primary-dim': '#e07b5a',
         'accent-primary-glow': 'rgba(201,100,66,0.10)',
-        'accent-secondary': '#5e5d59',
-        'text-primary': '#141413',
-        'text-secondary': '#5e5d59',
-        'text-muted': '#87867f',
-        'border-subtle': '#f0eee6',
-        'border-strong': '#e8e6dc',
+        'accent-secondary': '#8c8982',
+        'text-primary': '#ede6de',
+        'text-secondary': '#a89e94',
+        'text-muted': '#6e655c',
+        'border-subtle': '#2a2520',
+        'border-strong': '#3d3630',
       },
       fontFamily: {
         display: ["Georgia", "Times New Roman", "serif"],
