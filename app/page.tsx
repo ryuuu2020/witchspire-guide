@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 /* ============================================
    Witchspire — Home Page
    Page content only — chrome in layout.tsx
@@ -52,10 +54,11 @@ export default function HomePage() {
     <div className="bg-abyss bg-rune-pattern">
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex flex-col items-center justify-center px-4">
-        <img
+        <Image
           src="/hero.jpg"
           alt="Witchspire"
-          className="absolute inset-0 w-full h-full object-cover opacity-30"
+          fill
+          className="object-cover opacity-30"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-abyss via-transparent to-abyss pointer-events-none" />
 
