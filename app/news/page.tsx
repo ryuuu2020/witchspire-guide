@@ -77,6 +77,12 @@ const NEWS = [
     ],
   },
 ];
+export const metadata = {
+  title: "Witchspire News & Patch Notes — Complete Guide (2026)",
+  description:
+    "Archive",
+};
+
 
 export default function NewsPage() {
   return (

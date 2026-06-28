@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Witchspire TERMS OF USE — Complete Guide (2026)",
+  description:
+    "Witchspire Guide is an unofficial fan strategy site providing guides, boss strategies, weapon compendiums, and other game-related content for Witchspire. All content is for gameplay reference only.",
+};
+
 export default function TermsPage() {
   return (
     <div className="bg-abyss bg-rune-pattern min-h-screen">

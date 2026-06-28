@@ -48,6 +48,12 @@ const PATCH_TIMELINE = [
   { version: '0.1.1d', date: 'Jun 16, 2026', highlight: 'First-week QoL patch; roadmap reveal and AMA on YouTube.' },
   { version: 'EA Launch', date: 'Jun 10, 2026', highlight: 'Witchspire enters Steam Early Access; 100k copies sold within two weeks.' },
 ];
+export const metadata = {
+  title: "Witchspire Witchspire Guide — Complete Guide (2026)",
+  description:
+    "ENVAR GAMES — EARLY ACCESS",
+};
+
 
 export default function HomePage() {
   return (

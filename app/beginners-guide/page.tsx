@@ -43,6 +43,12 @@ const NEW_PLAYER_TRAPS = [
   { trap: 'Hoarding spirits instead of bonding', fix: 'Captured familiars do nothing until bonded. Pick one or two that fill gaps in your build and bond them early; their growth scales with playtime.' },
   { trap: 'Skipping the Offline Mode toggle', fix: 'Patch 0.1.3 added Offline Mode. If your connection is unstable, enable it before any long session — your save will sync back when you reconnect.' },
 ];
+export const metadata = {
+  title: "Witchspire Beginner Survival Guide — Complete Guide (2026)",
+  description:
+    "First 5 Hours",
+};
+
 
 export default function BeginnerGuidePage() {
   return (

@@ -86,6 +86,12 @@ const FAQ_GROUPS = [
     ],
   },
 ];
+export const metadata = {
+  title: "Witchspire Frequently Asked Questions — Complete Guide (2026)",
+  description:
+    "Community",
+};
+
 
 export default function FAQPage() {
   return (
