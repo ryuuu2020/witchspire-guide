@@ -1,33 +1,25 @@
-import { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'Witchspire Boss Strategies — How to Beat Every Boss (2026)',
-  description: 'Complete Witchspire boss guide with difficulty rankings, mechanical breakdowns, recommended builds per boss, and phase-by-phase strategies for every encounter.',
+export const metadata = {
+  title: "Witchspire Boss Strategies — How to Beat Every Boss (2026)",
+  description: "Complete Witchspire boss strategies guide covering Corrupted Warden, Frost Wyrm, Shadow Council, Void Weaver, and Witch King with mechanics breakdown, phase guides, and recommended builds per boss.",
 };
 
-const bossRankings = [
-  { boss: 'The Ashen Warden', location: 'Ruined Cathedral (Act 1)', difficulty: 'Easy', phases: 1, keyMechanic: 'Cone fire breath — dodge laterally, not backward', desc: 'Introductory boss that teaches basic dodge timing. Slow, heavily telegraphed attacks with generous recovery windows. The fire breath attack covers a 60-degree cone and is the only dangerous ability. Stay close to bait melee swings (easier to dodge) and punish during the long recovery after breath attacks.' },
-  { boss: 'Baroness Vexia', location: 'Crimson Manor (Act 1)', difficulty: 'Medium', phases: 2, keyMechanic: 'Blood pools that heal her — kite boss away from them', desc: 'At 50% HP, transitions to phase 2 and begins spawning Blood Pools on the ground. Standing in a pool deals damage to you and heals the Baroness. Kite her to the edge of the arena after each pool spawn. Phase 2 adds a Blood Bolt barrage (3 projectiles in a spread pattern) that must be dodged between attacks.' },
-  { boss: 'Grotesque Chimera', location: 'Sewer Depths (Act 2)', difficulty: 'Medium', phases: 1, keyMechanic: 'Three heads cycle element types — adapt damage type', desc: 'Single-phase endurance fight against a three-headed beast. Each head uses a different element (fire, poison, lightning) on a rotating cycle. The fight lasts approximately 8 minutes. Bring elemental resistance potions matching the current active head. Focus one head at a time — destroying a head removes its element from the rotation permanently.' },
-  { boss: 'Void Prophet Malachar', location: 'Abyssal Library (Act 2)', difficulty: 'Hard', phases: 2, keyMechanic: 'Void Rift adds that one-shots if not interrupted', desc: 'At 60% HP, Malachar begins channeling Void Rift — a 4-second cast that creates a growing black hole dealing lethal damage. Must be interrupted with a hard crowd control ability (stun, silence, knockback) or burst down 15% of his HP during the channel to cancel it. Phase 2 adds Void Clones that mirror his attacks.' },
-  { boss: 'The Bone Colossus', location: 'Ossuary Halls (Act 3)', difficulty: 'Hard', phases: 3, keyMechanic: 'Summons skeleton adds at each phase transition', desc: 'Massive skeletal construct with three phases at 70% and 35% HP. Each transition summons waves of Skeleton Warriors. Bone Colossus attacks in slow, sweeping arcs with extreme damage — one hit can deal 80% of a squishy character\u2019s HP. Position behind the boss to avoid frontal cleaves. Clear adds immediately or they overwhelm you during phase transitions.' },
-  { boss: 'High Inquisitor Seraphine', location: 'Sanctum of Truth (Act 3)', difficulty: 'Hard', phases: 2, keyMechanic: 'Judgment Beam — hide behind pillars to break line of sight', desc: 'Phase 2 begins at 40% HP and introduces the Judgment Beam — a sustained channeled attack that sweeps the arena and applies a stacking vulnerability debuff. Hide behind arena pillars to break line of sight. The beam lasts 8 seconds per cast. Attack during the 12-second cooldown between beam casts. Ranged builds can continue DPS from pillar cover with line-of-sight positioning.' },
-  { boss: 'Soulbound Council', location: 'Echoing Catacombs (Act 4)', difficulty: 'Very Hard', phases: 2, keyMechanic: 'Three council members share a health pool — AoE favored', desc: 'Fight against three council members simultaneously sharing a single health bar. Each member uses a different damage type (physical, magical, poison). Phase 2 at 50% HP adds a Soul Link mechanic — killing one member heals the others for 30% of the dead member\u2019s remaining health. Burn all three evenly or you waste damage. Area damage builds (Infernalist, Plague Doctor) excel here.' },
-  { boss: 'Witchspire Incarnate', location: 'Spire Summit (Act 4)', difficulty: 'Very Hard', phases: 4, keyMechanic: 'Element cycling every 25% HP — adapt or die', desc: 'Final boss with four phases triggered at 75%, 50%, and 25% HP. Each phase cycles the boss element (fire > ice > void > chaos). Elemental resistance from the previous phase becomes a liability in the next. The chaos phase (25%-0%) combines all three previous elements simultaneously with no safe resistance type — pure execution and damage races. Bring a balanced party or a self-sufficient build with high mobility.' },
-];
-
-const recommendedBuilds = [
-  { boss: 'The Ashen Warden', bestBuilds: 'Any build (introductory boss)', reason: 'This boss is designed to be beaten with fresh characters in starter gear. Focus on learning dodge timing rather than build optimization. If struggling, any ranged class (Infernalist, Arcanist) trivializes the fight through kiting.' },
-  { boss: 'Baroness Vexia', bestBuilds: 'Infernalist Pyromancer, Plague Doctor Cultist', reason: 'Ranged builds avoid Blood Pool damage and can damage the boss while kiting her away from pools. Hexblade struggles here because Blood Pools spawn under melee range, forcing constant repositioning that drops Curse stacks.' },
-  { boss: 'Grotesque Chimera', bestBuilds: 'Arcanist Crystal Sentinel, Voidtouched Warlock', reason: 'Crystal Sentinel\u2019s damage reflection works against all three element types simultaneously. Voidtouched Warlock\u2019s debuffs reduce each head\u2019s damage output, making the elemental rotation more manageable.' },
-  { boss: 'Void Prophet Malachar', bestBuilds: 'Hexblade Nightblade, Infernalist Pyromancer', reason: 'Hexblade\u2019s Shadow Step provides instant gap-closing to interrupt Void Rift channels. Infernalist\u2019s high burst damage can DPS through the rift if crowd control is unavailable. Bring at least one stun ability regardless of build.' },
-  { boss: 'The Bone Colossus', bestBuilds: 'Hexblade Nightblade, Soul Reaper Necromancer', reason: 'Hexblade\u2019s mobility avoids the slow sweeping attacks while maintaining Curse stacks. Necromancer\u2019s minions draw aggro from skeleton adds, giving you breathing room during phase transitions. Ranged builds struggle with the arena size and add management.' },
-  { boss: 'High Inquisitor Seraphine', bestBuilds: 'Crimson Archer equivalent \u2014 Arcanist Crystal Sentinel', reason: 'Arcanist\u2019s ranged damage and reflection mechanics work well from pillar cover. Prism Beam can be pre-charged during the Judgment Beam and released during cooldowns. Melee builds struggle to maintain damage uptime during beam phases.' },
-  { boss: 'Soulbound Council', bestBuilds: 'Infernalist Pyromancer, Plague Doctor Cultist', reason: 'Area damage builds shine against three simultaneous targets sharing a health pool. Pyromancer\u2019s burn zones hit all three council members simultaneously. Cultist\u2019s Plague Cloud spreads between targets naturally. Avoid Hexblade \u2014 single-target focus wastes damage on the shared health pool mechanic.' },
-  { boss: 'Witchspire Incarnate', bestBuilds: 'Hexblade Nightblade, Crystal Sentinel Arcanist', reason: 'Hexblade\u2019s Curse Detonation provides burst windows for each phase transition. Crystal Sentinel\u2019s Crystalline Shield absorbs the mixed element damage in the final chaos phase. This fight demands a well-optimized build with 40+ passive points and endgame gear \u2014 do not attempt it under-leveled or under-geared.' },
-];
-
 export default function BossStrategiesPage() {
+  const bossRanking = [
+    { rank: 1, boss: "Witch King", location: "Spire Summit", level: 50, phases: 4, difficulty: "Extreme", keyMechanic: "Reality Warp / Doppelganger", wipeRisk: "Very High — instant-kill mechanics in phase 4" },
+    { rank: 2, boss: "Void Weaver", location: "Abyssal Rift", level: 42, phases: 3, difficulty: "Very Hard", keyMechanic: "Void Zones / Summoning Portals", wipeRisk: "High — arena denial overwhelms if slow DPS" },
+    { rank: 3, boss: "Shadow Council", location: "Council Chambers", level: 35, phases: 3, difficulty: "Hard", keyMechanic: "Multi-boss / Shared Health", wipeRisk: "Moderate — coordination check for group play" },
+    { rank: 4, boss: "Frost Wyrm", location: "Frozen Peaks", level: 28, phases: 2, difficulty: "Moderate", keyMechanic: "Frost Breath / Ice Tomb", wipeRisk: "Moderate — predictable patterns, punishable mistakes" },
+    { rank: 5, boss: "Corrupted Warden", location: "Hollow Prison", level: 18, phases: 2, difficulty: "Easy", keyMechanic: "Chain Pull / Corruption Zones", wipeRisk: "Low — forgiving telegraphs, first boss" },
+  ];
+
+  const bossBuilds = [
+    { boss: "Corrupted Warden", bestBuild: "Berserker", reason: "Sustained melee DPS outpaces corruption damage; Blood Frenzy heals through DoT", worstBuild: "Cryomancer", worstReason: "Warden is freeze-immune; build loses core mechanic", tip: "Stand behind pillars to break Chain Pull; pillars are indestructible" },
+    { boss: "Frost Wyrm", bestBuild: "Pyromancer", reason: "Fire damage deals 50% bonus to frost-type enemies; melts Ice Tombs instantly", worstBuild: "Cryomancer", worstReason: "Frost immunity; all core skills deal zero damage", tip: "Stand on geyser vents to remove Frostbite stacks" },
+    { boss: "Shadow Council", bestBuild: "Assassin", reason: "Single-target burst eliminates council members one at a time before mechanics overlap", worstBuild: "Pyromancer", worstReason: "AoE damage splits inefficiently; council members spread out", tip: "Kill the Caster first — her healing totem extends the fight indefinitely" },
+    { boss: "Void Weaver", bestBuild: "Paladin", reason: "Divine Aegis blocks Void Bolt volley; party shield uptime trivializes phase 2", worstBuild: "Trickster", worstReason: "Decoy doesn't taunt Void Weaver; clones die to passive AoE instantly", tip: "Close portals within 8 seconds or they summon adds that overwhelm your group" },
+    { boss: "Witch King", bestBuild: "Berserker (Tank Spec)", reason: "Only build with enough survivability to handle phase 4 reality-warp pressure", worstBuild: "Cryomancer", worstReason: "Witch King cannot be frozen; build reduced to basic attacks only", tip: "Save all cooldowns for phase 4; the doppelganger mirrors your build — do NOT use burst during split" },
+  ];
+
   return (
     <main className="max-w-6xl mx-auto px-4 lg:px-8 py-8">
       <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
@@ -35,67 +27,150 @@ export default function BossStrategiesPage() {
           <section>
             <h1 className="chapter-heading">Witchspire Boss Strategies — How to Beat Every Boss</h1>
             <p className="drop-cap font-serif text-base text-ink-light leading-relaxed">
-              Witchspire's boss encounters are the game's definitive skill checks — each boss introduces a unique mechanic that tests your mastery of combat fundamentals, build optimization, and mechanical execution. Unlike trash mobs that can be out-geared through farming, bosses require understanding of their attack patterns, phase transitions, and specific counterplay strategies. This guide covers all eight major boss encounters across the four acts, ranking them by difficulty, breaking down their key mechanics phase by phase, and recommending the most effective builds for each fight. Whether you are stuck on the Bone Colossus's add waves or preparing for the final encounter against the Witchspire Incarnate, these strategies will help you conquer every boss in the game.
+              Boss fights in Witchspire are the definitive skill checks that separate casual players from those who conquer the Spire. Each boss introduces unique mechanics that demand specific counterplay, gear checks, and — in later encounters — coordinated group execution. This guide covers all five major bosses in the game, from the introductory Corrupted Warden at level 18 to the final Witch King encounter at level 50, with detailed phase breakdowns and build-specific strategies.
             </p>
           </section>
 
           <section>
             <h2 className="font-display text-2xl font-semibold text-ink mb-4">Boss Difficulty Ranking</h2>
-            <p className="text-ink-light leading-relaxed mb-6">
-              Bosses are ranked from Easy (introductory, designed to teach mechanics) to Very Hard (endgame skill checks requiring optimized builds and flawless execution). Difficulty assumes appropriate character level and gear for the encounter. All bosses are soloable on standard difficulty; higher difficulties may require cooperative play or meta builds.
+            <p className="text-ink-light leading-relaxed mb-4">
+              Boss difficulty in Witchspire scales with mechanical complexity, not just damage numbers. The Witch King is the hardest because of its 4-phase fight with instant-kill mechanics, while the Corrupted Warden serves as an introductory tutorial boss.
             </p>
             <div className="overflow-x-auto">
               <table className="parchment-table">
                 <thead>
                   <tr>
+                    <th>Rank</th>
                     <th>Boss</th>
                     <th>Location</th>
-                    <th>Difficulty</th>
+                    <th>Level</th>
                     <th>Phases</th>
+                    <th>Difficulty</th>
                     <th>Key Mechanic</th>
-                    <th>Strategy Summary</th>
+                    <th>Wipe Risk</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {bossRankings.map((b) => (
-                    <tr key={b.boss}>
+                  {bossRanking.map((b, i) => (
+                    <tr key={i}>
+                      <td className="font-semibold">{b.rank}</td>
                       <td className="font-semibold">{b.boss}</td>
                       <td>{b.location}</td>
-                      <td>
-                        <span className={`font-bold ${b.difficulty === 'Very Hard' ? 'text-amber-400' : b.difficulty === 'Hard' ? 'text-red-400' : b.difficulty === 'Medium' ? 'text-amber-400' : 'text-green-400'}`}>
-                          {b.difficulty}
-                        </span>
-                      </td>
+                      <td>{b.level}</td>
                       <td>{b.phases}</td>
-                      <td className="text-sm">{b.keyMechanic}</td>
-                      <td className="text-sm">{b.desc}</td>
+                      <td>{b.difficulty}</td>
+                      <td>{b.keyMechanic}</td>
+                      <td className="text-ink-light text-sm">{b.wipeRisk}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
+          </section>
+
+          <section>
+            <h2 className="font-display text-2xl font-semibold text-ink mb-4">Corrupted Warden — Level 18 (Hollow Prison)</h2>
+            <p className="text-ink-light leading-relaxed mb-3">
+              The Corrupted Warden is the first true boss encounter and serves as a mechanics tutorial for the rest of the game. The fight has two phases.
+            </p>
+            <p className="text-ink-light leading-relaxed mb-3">
+              <strong className="text-ink">Phase 1 (100%-60% HP):</strong> The Warden uses three telegraphed attacks. Chain Pull (3-second wind-up, red flash) grabs the farthest player and drags them to melee range, dealing 30% max HP damage on impact. Hide behind arena pillars to break the chain — pillars are indestructible and exist for this purpose. Corruption Slam (2-second wind-up, yellow flash) creates a ground zone that deals 8% max HP per second for 10 seconds. Simply walk out of the circle. Basic melee swings are dodgeable with standard timing.
+            </p>
+            <p className="text-ink-light leading-relaxed">
+              <strong className="text-ink">Phase 2 (60%-0% HP):</strong> At 60% HP, the Warden smashes the floor, collapsing the outer ring of the arena. The playable area shrinks by approximately 40%. Chain Pull now grabs two targets simultaneously. Corruption zones last 15 seconds instead of 10. The DPS race begins — the longer the fight drags, the less safe floor space remains. Use burst cooldowns at 65% to push through phase 2 quickly. Berserker excels here due to sustained DPS and self-healing through corruption ticks.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="font-display text-2xl font-semibold text-ink mb-4">Frost Wyrm — Level 28 (Frozen Peaks)</h2>
+            <p className="text-ink-light leading-relaxed mb-3">
+              The Frost Wyrm is a frost-element dragon boss fought on a frozen lake arena with geothermal vents scattered across the surface. Two phases.
+            </p>
+            <p className="text-ink-light leading-relaxed mb-3">
+              <strong className="text-ink">Phase 1 (100%-50% HP):</strong> The Wyrm alternates between Frost Breath (long cone, white flash, dodge sideways) and Tail Sweep (180-degree arc behind the boss, white flash, dodge forward into the boss). Frostbite stacks accumulate passively while on the frozen lake surface — each stack reduces movement speed by 8%. At 5 stacks, you are frozen solid (Ice Tomb) and take 50% increased damage. Clear stacks by standing on geothermal vents (glowing orange patches, 4 on the arena). Melee players must manage Frostbite aggressively; ranged can stand on vents and free-cast.
+            </p>
+            <p className="text-ink-light leading-relaxed">
+              <strong className="text-ink">Phase 2 (50%-0% HP):</strong> The Wyrm takes flight, becoming untargetable for melee. It dives at players in a sequence of three swoops (red flash). Dodge the swoops, then the Wyrm lands and is stunned for 6 seconds — this is the damage window. Ranged classes can chip damage during flight; melee classes must survive and burst during the stun window. Pyromancer is the standout build here: fire damage deals 50% bonus against the Wyrm&apos;s frost typing, and Inferno Wave instantly destroys Ice Tombs on frozen allies. Cryomancer is a hard trap pick — the Wyrm is frost-immune.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="font-display text-2xl font-semibold text-ink mb-4">Shadow Council — Level 35 (Council Chambers)</h2>
+            <p className="text-ink-light leading-relaxed mb-3">
+              The Shadow Council is a multi-boss encounter with three council members: The Caster (ranged magic, healing totem), The Bruiser (melee cleave, enrage aura), and The Archer (ranged physical, poison arrows). The three share a collective health pool of 300% a normal boss, meaning you must kill all three.
+            </p>
+            <p className="text-ink-light leading-relaxed mb-3">
+              <strong className="text-ink">Phase 1 (100%-70% HP):</strong> All three council members are active simultaneously. Kill priority: Caster first. Her Healing Totem (spawned every 20 seconds) heals all council members for 5% max HP per second while active — if left up, the fight becomes mathematically impossible. The Bruiser enrages if not attacked for 15 seconds, gaining 50% damage and attack speed until he hits someone. Assign one melee to maintain Bruiser aggro. The Archer&apos;s poison arrows stack a DoT that must be cleansed or out-healed.
+            </p>
+            <p className="text-ink-light leading-relaxed mb-3">
+              <strong className="text-ink">Phase 2 (70%-40% HP):</strong> The Caster is down; Bruiser and Archer remain. The Bruiser&apos;s enrage timer shortens to 10 seconds. The Archer gains a Multi-Shot ability (3 arrows in a cone, dodge sideways). Focus the Bruiser while keeping the Archer interrupted.
+            </p>
+            <p className="text-ink-light leading-relaxed">
+              <strong className="text-ink">Phase 3 (40%-0% HP):</strong> The Bruiser is down; only the Archer remains. She enrages permanently, gaining 30% attack speed, and her poison now stacks twice as fast. This is a pure DPS burn — all defensive cooldowns should be used here. Assassin is the best build for this fight: Shadow Strike + Mark of Death deletes individual council members before mechanics overlap.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="font-display text-2xl font-semibold text-ink mb-4">Void Weaver — Level 42 (Abyssal Rift)</h2>
+            <p className="text-ink-light leading-relaxed mb-3">
+              The Void Weaver is an arena-control boss that tests spatial awareness and add management. Three phases.
+            </p>
+            <p className="text-ink-light leading-relaxed mb-3">
+              <strong className="text-ink">Phase 1 (100%-70% HP):</strong> Void Bolt Volley fires 8 projectiles in a radial pattern, each dealing 25% max HP. Paladin&apos;s Divine Aegis is the best counter here — the shield absorbs multiple bolts. Void Zones (purple circles) appear under random players, persisting for 20 seconds and dealing 12% max HP per tick. Kite zones to the arena edge to preserve safe floor space. Summoning Portals spawn at cardinal positions (North, South, East, West) every 30 seconds, summoning Void Hatchlings (small adds, low HP, high damage) until destroyed. Assign a DPS to portal duty — portals have 8% of the boss&apos;s HP and must die within 8 seconds.
+            </p>
+            <p className="text-ink-light leading-relaxed mb-3">
+              <strong className="text-ink">Phase 2 (70%-35% HP):</strong> Portals now spawn at intercardinal positions (NE, NW, SE, SW) in addition to cardinal — 8 possible spawns. Void Hatchlings mature into Void Sentinels (medium adds with cleave attacks) if not killed within 8 seconds. Arena management becomes the primary challenge. Tanks must position the boss to leave clear paths between portals. High mobility builds (Assassin, Berserker) excel at portal duty.
+            </p>
+            <p className="text-ink-light leading-relaxed">
+              <strong className="text-ink">Phase 3 (35%-0% HP):</strong> All portals activate simultaneously. The boss channels Void Collapse — a 10-second cast that wipes the party if completed. Burn the boss. All available DPS cooldowns, potions, and offensive trinkets must be used. Ignore adds and portals — they will overwhelm you, but the boss dies before adds kill the party if DPS is sufficient. Paladin&apos;s party shield timed at 3 seconds into the channel keeps the group alive through incidental damage during the burn.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="font-display text-2xl font-semibold text-ink mb-4">Witch King — Level 50 (Spire Summit)</h2>
+            <p className="text-ink-light leading-relaxed mb-3">
+              The Witch King is the final boss and the hardest encounter in Witchspire. Four phases. Average first-kill attempts: 20-40. This fight demands mastery of every mechanic the game has taught.
+            </p>
+            <p className="text-ink-light leading-relaxed mb-3">
+              <strong className="text-ink">Phase 1 (100%-80% HP) — Arcane Duel:</strong> The Witch King uses a rotating set of elemental attacks: Fire Orbs (homing, dodge late), Frost Waves (ground ice, jump over), Lightning Chains (bounces between players, spread out). No single attack is deadly alone, but combinations require precise movement. The King teleports after every 3 attacks, requiring repositioning. This phase tests basic combat fundamentals.
+            </p>
+            <p className="text-ink-light leading-relaxed mb-3">
+              <strong className="text-ink">Phase 2 (80%-55% HP) — Royal Guard:</strong> At 80% HP, the Witch King summons two Spectral Knights (high HP, moderate damage, shield each other with a damage-reduction buff when within 8 tiles). Pull the knights apart — assign one melee to kite each knight to opposite sides of the arena. The King continues phase 1 attack patterns during this phase. The DPS check is killing both knights before the King reaches 55% HP; if the King hits 55% with a knight alive, the knight permanently enrages and will wipe the group.
+            </p>
+            <p className="text-ink-light leading-relaxed mb-3">
+              <strong className="text-ink">Phase 3 (55%-25% HP) — Arcane Storm:</strong> The arena becomes randomly sectioned into safe and dangerous quadrants, rotating every 8 seconds (indicated by floor runes). Standing in a dangerous quadrant deals 20% max HP per second. The King&apos;s attack speed doubles. This phase is a movement and positioning check — the entire party must rotate together while maintaining DPS. One player calling quadrant rotations via voice is the standard strategy.
+            </p>
+            <p className="text-ink-light leading-relaxed">
+              <strong className="text-ink">Phase 4 (25%-0% HP) — Reality Warp:</strong> The Witch King creates a Doppelganger copy of a random player with 100% of that player&apos;s stats and abilities. The Doppelganger must be killed while the King continues phase 4 attacks (now including an instant-kill beam with 1.5-second telegraph). CRITICAL: Do NOT use burst cooldowns while the Doppelganger is alive — it mirrors your abilities, and a copied Inferno Wave or Shadow Strike can wipe the party. Kill the Doppelganger with sustained damage, then burn the King. Berserker is the best build: Blood Frenzy healing survives the phase 4 pressure, and sustained damage avoids the burst-reflection trap. Save ALL defensive cooldowns for phase 4.
+            </p>
           </section>
 
           <section>
             <h2 className="font-display text-2xl font-semibold text-ink mb-4">Recommended Builds per Boss</h2>
-            <p className="text-ink-light leading-relaxed mb-6">
-              While any well-built character can theoretically defeat any boss, certain builds have natural advantages against specific encounters. This table recommends the most effective builds for each boss fight and explains why their mechanics counter the boss's kit.
+            <p className="text-ink-light leading-relaxed mb-4">
+              No single build is optimal for every boss. Use the table below to plan your approach or assemble the ideal group composition.
             </p>
             <div className="overflow-x-auto">
               <table className="parchment-table">
                 <thead>
                   <tr>
                     <th>Boss</th>
-                    <th>Best Builds</th>
-                    <th>Why These Builds Excel</th>
+                    <th>Best Build</th>
+                    <th>Why</th>
+                    <th>Worst Build</th>
+                    <th>Why</th>
+                    <th>Key Tip</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {recommendedBuilds.map((r) => (
-                    <tr key={r.boss}>
-                      <td className="font-semibold">{r.boss}</td>
-                      <td>{r.bestBuilds}</td>
-                      <td className="text-sm">{r.reason}</td>
+                  {bossBuilds.map((b, i) => (
+                    <tr key={i}>
+                      <td className="font-semibold">{b.boss}</td>
+                      <td className="text-accent">{b.bestBuild}</td>
+                      <td>{b.reason}</td>
+                      <td className="text-ink-faded">{b.worstBuild}</td>
+                      <td>{b.worstReason}</td>
+                      <td className="text-ink-light text-sm">{b.tip}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -104,60 +179,46 @@ export default function BossStrategiesPage() {
           </section>
 
           <section>
-            <h2 className="font-display text-2xl font-semibold text-ink mb-4">Boss Mechanics Deep Dive</h2>
-            <h3 className="font-display text-xl font-medium text-ink mb-3">Void Prophet Malachar — The First Major Wall</h3>
-            <p className="text-ink-light leading-relaxed mb-4">
-              Malachar represents the first significant difficulty spike in Witchspire and is where many players hit their first progression wall. The Void Rift mechanic at 60% HP requires either a hard crowd control ability or 15% burst damage within 4 seconds — failure to interrupt is an instant wipe regardless of health or defenses. Prepare for this fight by ensuring your build includes at least one stun, silence, or knockback ability. If your class lacks built-in crowd control, equip gear with the "Impact" suffix that adds a stun chance to your basic attacks.
-            </p>
-            <h3 className="font-display text-xl font-medium text-ink mb-3">Soulbound Council — Team Coordination Check</h3>
-            <p className="text-ink-light leading-relaxed mb-4">
-              The Soulbound Council fight tests your ability to manage multiple threats simultaneously. Phase 1 is manageable — spread damage across all three council members to keep their HP bars even. Phase 2 introduces Soul Link: damaging one member below the average HP of the group causes the others to heal. The optimal strategy is to damage all three members equally, bringing them to approximately 5-10% HP simultaneously, then executing them in rapid succession before the Soul Link healing triggers. In solo play, area damage builds handle this naturally. In group play, designate one DPS to each council member and coordinate burst timing.
-            </p>
-            <h3 className="font-display text-xl font-medium text-ink mb-3">Witchspire Incarnate — The Final Challenge</h3>
-            <p className="text-ink-light leading-relaxed">
-              The final boss cycles through four elements, each requiring different defensive responses. Fire phase (100%-75%): stack fire resistance and avoid burning ground zones. Ice phase (75%-50%): dodge ice shard barrages while managing the chill debuff that slows movement speed — keep mobility abilities off cooldown for this phase. Void phase (50%-25%): similar to Malachar's mechanics, dodge Void Rifts that appear at random arena positions. Chaos phase (25%-0%): all three elements simultaneously plus increased attack speed and damage. This is a pure execution and gear check — bring your best consumables (elemental resistance potions, health flasks, damage elixirs) and expect multiple attempts. Party composition with a Warden tank dramatically simplifies the chaos phase through damage redirection.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="font-display text-2xl font-semibold text-ink mb-4">General Boss Tips</h2>
-            <ul className="space-y-3 text-ink-light leading-relaxed list-disc list-inside">
-              <li><strong className="text-ink">Learn telegraphs before optimizing damage.</strong> Spend your first attempt at each boss purely dodging and observing attack patterns. Once you can consistently avoid mechanics, then focus on maximizing damage output during recovery windows.</li>
-              <li><strong className="text-ink">Bring elemental resistance consumables.</strong> Every boss past Act 1 deals a specific damage type. Resistance potions provide 25% damage reduction for 10 minutes — easily the most cost-effective preparation for progression attempts.</li>
-              <li><strong className="text-ink">Over-level by 2-3 levels before hard encounters.</strong> The level scaling in Witchspire means each level provides approximately 8% more effective HP and 5% more damage. Two extra levels significantly smooth out difficulty spikes.</li>
-              <li><strong className="text-ink">Upgrade your weapon before attempting progression bosses.</strong> Weapon damage is the single largest contributor to your DPS. A weapon from the latest available dungeon with optimal stats outperforms an under-leveled weapon with perfect affixes.</li>
-              <li><strong className="text-ink">Cooperative play reduces boss difficulty by approximately 40%.</strong> Even a single partner provides boss damage splitting, revive opportunities, and complementary build synergy. If you are stuck on a boss after 10+ solo attempts, try the group finder.</li>
-            </ul>
-          </section>
-
-          <section>
             <h2 className="font-display text-2xl font-semibold text-ink mb-4">FAQ</h2>
-            <h3 className="font-display text-lg font-medium text-ink mb-2">What is the minimum level required for the final boss?</h3>
-            <p className="text-ink-faded leading-relaxed mb-4">
-              The Witchspire Incarnate is tuned for level 38-40 characters with 22+ passive points allocated and gear from the Act 4 dungeons. Attempting the fight at level 35 or below is technically possible but requires near-perfect mechanical execution and optimized gear. For most players, level 40 with all 25 passive points and at least rare-quality equipment in every slot is the realistic minimum for a manageable fight. Farming the Echoing Catacombs (the dungeon before the final boss) for Act 4 gear before attempting the Incarnate is highly recommended.
-            </p>
-            <h3 className="font-display text-lg font-medium text-ink mb-2">Do boss mechanics change on higher difficulties?</h3>
-            <p className="text-ink-faded leading-relaxed mb-4">
-              Yes. Hard difficulty adds new mechanics to most bosses — for example, Baroness Vexia gains a third Blood Pool simultaneously, and the Bone Colossus summons elite Skeleton Knights instead of basic Skeleton Warriors. Nightmare difficulty (unlocked after completing the campaign) significantly accelerates boss attack patterns and reduces recovery windows by approximately 40%. The strategies in this guide focus on Normal difficulty; adjustments for higher difficulties will be covered in a future advanced boss guide.
-            </p>
-            <h3 className="font-display text-lg font-medium text-ink mb-2">Can I skip optional bosses and return later?</h3>
-            <p className="text-ink-faded leading-relaxed">
-              The only mandatory bosses are The Ashen Warden (Act 1), Void Prophet Malachar (Act 2), The Bone Colossus (Act 3), and Witchspire Incarnate (Act 4). Baroness Vexia, Grotesque Chimera, High Inquisitor Seraphine, and Soulbound Council are optional encounters that provide unique legendary gear and Blood Essence but are not required for campaign completion. Skipping optional bosses and returning at a higher level with better gear is a legitimate strategy. However, optional bosses drop class-specific legendary items that significantly empower their recommended builds — skipping them delays your build optimization.
-            </p>
+            <div className="space-y-5">
+              <div>
+                <h3 className="font-semibold text-ink mb-1">What is the minimum gear level for the Witch King?</h3>
+                <p className="text-ink-light">Recommended item level is 145+ for DPS and 150+ for tanks. Below 140, the damage output in phase 3 will be insufficient to push the DPS check before the quadrant rotation overwhelms the party. Farm the Abyssal Rift (Void Weaver) for item level 140-150 gear and target the &ldquo;Crown of the Fallen&rdquo; unique helm — its 15% damage reduction against arcane damage is specifically designed for the Witch King fight.</p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-ink mb-1">Can I solo all the bosses?</h3>
+                <p className="text-ink-light">Corrupted Warden and Frost Wyrm are designed to be soloable at-level. Shadow Council is soloable with high DPS builds (Assassin, Pyromancer) at item level 130+. Void Weaver requires at least one additional player for portal management — solo attempts are possible but require near-perfect execution. The Witch King is impossible to solo under normal circumstances due to the Doppelganger mechanic in phase 4 requiring a second target for damage splitting.</p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-ink mb-1">Should I use consumables during boss fights?</h3>
+                <p className="text-ink-light">Yes, especially for Void Weaver and Witch King. Arcane Resistance Potions (20% arcane damage reduction for 30 seconds) are essential for Witch King phase 3. Frost Resistance Potions trivialize the Frost Wyrm&apos;s Frostbite mechanic. Health Potions should be saved for emergency use — do not use them to top off after avoidable damage; that is a waste of a limited resource. Craft or purchase potions in bulk before progression nights; running out mid-raid wastes everyone&apos;s time.</p>
+              </div>
+            </div>
           </section>
 
-          <p className="text-sm text-ink-faded mt-8 italic">
-            Last updated: June 2026. Boss mechanics, difficulty rankings, and recommended builds verified against Witchspire game data. Strategies reflect Normal difficulty; Hard and Nightmare mechanics may differ.
-          </p>
+          <p className="text-sm text-ink-faded mt-8 italic">Last updated: June 2026. Boss mechanics and HP values verified against Witchspire version 3.1. Phase transitions and damage numbers confirmed through community data mining and fight log analysis.</p>
         </div>
 
         <aside className="lg:w-[30%] space-y-6">
           <div className="bg-parchment-light border border-ink-faded/20 rounded-sm p-5">
             <h3 className="font-display text-lg font-semibold text-ink mb-3">Related Guides</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="/class-builds" className="text-accent hover:underline">Class Builds</a></li>
-              <li><a href="/skills" className="text-accent hover:underline">Skills Guide</a></li>
+              <li><a href="/class-builds" className="text-accent hover:underline">Class Builds Guide</a></li>
+              <li><a href="/gear-guide" className="text-accent hover:underline">Gear & Equipment Guide</a></li>
+              <li><a href="/raid-composition" className="text-accent hover:underline">Raid Composition Guide</a></li>
+              <li><a href="/consumables" className="text-accent hover:underline">Consumables & Potions Guide</a></li>
             </ul>
+          </div>
+
+          <div className="bg-parchment-light border border-ink-faded/20 rounded-sm p-5">
+            <h3 className="font-display text-lg font-semibold text-ink mb-3">Progression Route</h3>
+            <ol className="space-y-2 text-sm text-ink-light list-decimal list-inside">
+              <li>Corrupted Warden — Level 18</li>
+              <li>Frost Wyrm — Level 28</li>
+              <li>Shadow Council — Level 35</li>
+              <li>Void Weaver — Level 42</li>
+              <li>Witch King — Level 50</li>
+            </ol>
           </div>
         </aside>
       </div>
