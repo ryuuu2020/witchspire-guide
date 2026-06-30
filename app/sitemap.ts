@@ -10,6 +10,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/familiars',
     '/crafting',
     '/beginners-guide',
+    '/boss-strategies',
+    '/class-builds',
     '/faq',
     '/news',
     '/privacy',
