@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/google4cd6cdf221ea7b0b.html",
+      "destination": "/google4cd6cdf221ea7b0b"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "witchspire-guide.vercel.app" }],
+      "destination": "https://witchspire.gguidehub.com/$1",
+      "permanent": true
+    }
+  ]
+}

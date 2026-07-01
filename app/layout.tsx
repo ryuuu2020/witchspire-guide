@@ -2,11 +2,13 @@ import type { Metadata } from 'next';
 import './globals.css';
 import Script from "next/script";
 import Link from "next/link";
+import SchemaMarkup from '@/shared/SchemaMarkup';
+
 
 export const metadata: Metadata = {
   title: 'Witchspire Guide — Familiars, Crafting, Covens & Survival',
   description: 'Complete Witchspire guide covering familiar taming, sanctuary building, coven choice (Cloudpiercers & Foretellers), corruption mechanics, and patch-by-patch survival tips for this co-op witch adventure by Envar Games.',
-  metadataBase: new URL('https://witchspire-guide.vercel.app'),
+  metadataBase: new URL("https://witchspire.gguidehub.com"),
   openGraph: {
     title: 'Witchspire Guide',
     description: 'Complete Witchspire guide — familiars, crafting, covens, corruption survival, and patch notes for the co-op witch adventure by Envar Games.',
