@@ -49,9 +49,9 @@ const PATCH_TIMELINE = [
   { version: 'EA Launch', date: 'Jun 10, 2026', highlight: 'Witchspire enters Steam Early Access; 100k copies sold within two weeks.' },
 ];
 export const metadata = {
-  title: "Witchspire Witchspire Guide — Complete Guide (2026)",
+  title: 'Witchspire Guide — Familiars, Crafting, Covens & Survival',
   description:
-    "ENVAR GAMES — EARLY ACCESS",
+    'Complete Witchspire guide covering familiar taming, sanctuary building, coven choice, corruption survival, and patch updates for the co-op witch adventure by Envar Games.',
 };
 
 
