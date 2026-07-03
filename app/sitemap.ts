@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = 'https://witchspire-guide.vercel.app';
+  const base = 'https://witchspire.gguidehub.com';
   const now = new Date();
 
   const routes = [
