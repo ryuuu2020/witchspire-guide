@@ -140,6 +140,9 @@ gtag('config', 'G-ET6778V62K');`}
                 <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
                   <div className="flex items-center gap-4 font-label text-[10px] uppercase tracking-wider text-parchment-dim">
                     <span>&copy; {new Date().getFullYear()} Witchspire Guide</span>
+              <span className="font-body text-sm text-stone">
+                Part of the <a href="https://gguidehub.com" className="text-stone hover:text-bark underline underline-offset-2 transition-colors">GameGuideHub</a> network
+              </span>
                     <Link href="/privacy" className="hover:text-dark-gold transition-colors">Privacy</Link>
                     <Link href="/terms" className="hover:text-dark-gold transition-colors">Terms</Link>
                   </div>
