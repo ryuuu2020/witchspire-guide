@@ -161,7 +161,7 @@ export default function ClassBuildsPage() {
               <li><a href="/boss-strategies" className="text-accent hover:underline">Boss Strategies</a></li>
               <li><a href="/gear-guide" className="text-accent hover:underline">Gear & Equipment Guide</a></li>
               <li><a href="/leveling-guide" className="text-accent hover:underline">Leveling Guide 1-50</a></li>
-              <li><a href="/skill-tree" className="text-accent hover:underline">Complete Skill Tree Guide</a></li>
+              <li><a href="/skill-tree-guide" className="text-accent hover:underline">Complete Skill Tree Guide</a></li>
             </ul>
           </div>
 
