@@ -37,7 +37,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="font-display text-lg tracking-display text-dark-gold mb-3">Third-Party Links</h2>
             <p className="font-body text-sm text-parchment-dim leading-relaxed">
-              This site contains external links to Afdian, Steam Store, and other game guide sites. Third-party websites have their own privacy policies unrelated to this site.
+              This site contains external links to UniFans, Steam Store, and other game guide sites. Third-party websites have their own privacy policies unrelated to this site.
             </p>
           </section>
 

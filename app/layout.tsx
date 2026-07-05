@@ -105,12 +105,12 @@ gtag('config', 'G-ET6778V62K');`}
 
               {/* Support Us - top right */}
               <a
-                href="https://afdian.com/a/gameguidehub"
+                href="https://app.unifans.io/c/ryu2020"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-label text-[10px] uppercase tracking-wider text-dark-gold hover:text-dark-gold-dim transition-colors"
               >
-                ❤️ Support Us
+                Support us on UniFans
               </a>
 
               {/* Status */}
@@ -147,12 +147,12 @@ gtag('config', 'G-ET6778V62K');`}
                     <Link href="/terms" className="hover:text-dark-gold transition-colors">Terms</Link>
                   </div>
                   <a
-                    href="https://afdian.com/a/gameguidehub"
+                    href="https://app.unifans.io/c/ryu2020"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="font-label text-[10px] uppercase tracking-wider text-dark-gold hover:text-dark-gold-dim transition-colors"
                   >
-                    SUPPORT ON AFDIAN
+                    Support us on UniFans
                   </a>
                 </div>
               </div>

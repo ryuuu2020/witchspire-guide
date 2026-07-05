@@ -44,7 +44,7 @@ export default function TermsPage() {
           <section>
             <h2 className="font-display text-lg tracking-display text-dark-gold mb-3">Contact</h2>
             <p className="font-body text-sm text-parchment-dim leading-relaxed">
-              For copyright issues or content disputes, contact the administrator via the Afdian platform. We respect all copyright holders and content contributors.
+              For copyright issues or content disputes, contact the administrator via UniFans. We respect all copyright holders and content contributors.
             </p>
           </section>
         </div>
