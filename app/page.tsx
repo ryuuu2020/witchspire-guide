@@ -247,7 +247,7 @@ export default function HomePage() {
             </p>
           </div>
           <div className="flex flex-wrap gap-3">
-            <a href="https://store.steampowered.com/app/2679100/Witchspire/" target="_blank" rel="noopener noreferrer" className="px-4 py-2 border border-dark-gold/40 text-dark-gold font-label text-[10px] uppercase tracking-wider hover:bg-dark-gold hover:text-abyss transition-colors">Steam Store</a>
+            <a href="https://store.steampowered.com/app/2679100/?curator_clanid=46198091" target="_blank" rel="noopener noreferrer" className="px-4 py-2 border border-dark-gold/40 text-dark-gold font-label text-[10px] uppercase tracking-wider hover:bg-dark-gold hover:text-abyss transition-colors">Steam Store</a>
             <a href="http://playwitchspire.com" target="_blank" rel="noopener noreferrer" className="px-4 py-2 border border-dark-gold/40 text-dark-gold font-label text-[10px] uppercase tracking-wider hover:bg-dark-gold hover:text-abyss transition-colors">Official Site</a>
           </div>
         </div>
