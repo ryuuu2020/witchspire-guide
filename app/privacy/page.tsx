@@ -2,6 +2,10 @@ export const metadata = {
   title: "Witchspire PRIVACY POLICY — Complete Guide (2026)",
   description:
     "Witchspire Guide uses Google Analytics to collect anonymized visit statistics (page views, referral channels, etc.) for content optimization. Google Analytics uses anonymized client IDs and does not c...",
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 
 export default function PrivacyPage() {

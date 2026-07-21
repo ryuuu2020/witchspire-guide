@@ -1,14 +1,11 @@
 import type { MetadataRoute } from 'next';
 
-export const dynamic = "force-static";
-
 const BASE = 'https://witchspire.gguidehub.com';
 
 // 该文件由 scripts/sync-sitemaps.py 自动生成，新增页面后重新运行脚本即可
 const ROUTES = [
     '',
     '/about',
-    '/base-building-guide',
     '/beginners-guide',
     '/boss-attack-patterns',
     '/boss-strategies',

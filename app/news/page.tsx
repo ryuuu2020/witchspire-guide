@@ -81,6 +81,10 @@ export const metadata = {
   title: "Witchspire News & Patch Notes — Complete Guide (2026)",
   description:
     "Archive",
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 
 

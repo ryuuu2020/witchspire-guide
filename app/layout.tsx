@@ -13,9 +13,16 @@ export const metadata: Metadata = {
     title: 'Witchspire Guide',
     description: 'Complete Witchspire guide — familiars, crafting, covens, corruption survival, and patch notes for the co-op witch adventure by Envar Games.',
     type: 'website',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Witchspire Guide' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Witchspire Guide',
+    description: 'Complete Witchspire guide covering familiar taming, sanctuary building, coven choice (Cloudpiercers & Foretellers), corruption mechanics, and patch-by-patch survival tips for this co-op witch adventure by Envar Games.',
+    images: ['/og-image.png'],
   },
   verification: {
-    google: '4cd6cdf221ea7b0b',
+    google: 'google4cd6cdf221ea7b0b',
   },
 };
 
@@ -25,8 +32,8 @@ const NAV_ITEMS = [
   { label: 'Familiars', href: '/familiars' },
   { label: 'Crafting', href: '/crafting' },
   { label: 'Beginners', href: '/beginners-guide' },
+  { label: 'Tier List', href: '/tier-list' },
   { label: 'FAQ', href: '/faq' },
-  { label: 'News', href: '/news' },
 ];
 
 export default function RootLayout({
@@ -37,7 +44,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta name="google-site-verification" content="4cd6cdf221ea7b0b" />
+        <meta name="google-site-verification" content="google4cd6cdf221ea7b0b" />
         <Script strategy="lazyOnload" src="https://www.googletagmanager.com/gtag/js?id=G-ET6778V62K" />
         <Script strategy="lazyOnload" id="gtag-init">
               {`window.dataLayer = window.dataLayer || [];
@@ -51,7 +58,7 @@ gtag('config', 'G-ET6778V62K');`}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: `{"@context": "https://schema.org", "@type": "WebSite", "name": "Witchspire Guide", "url": "https://witchspire-guide.vercel.app"}`
+            __html: `{"@context": "https://schema.org", "@type": "WebSite", "name": "Witchspire Guide", "url": "https://witchspire.gguidehub.com"}`
           }}
         />
 
@@ -139,11 +146,12 @@ gtag('config', 'G-ET6778V62K');`}
                 </div>
                 <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
                   <div className="flex items-center gap-4 font-label text-[10px] uppercase tracking-wider text-parchment-dim">
-                    <span>&copy; {new Date().getFullYear()} Witchspire Guide</span>
+                    <span>&copy; {new Date().getFullYear()} · Written by the GameGuideHub Team · Last updated {new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' })} Witchspire Guide</span>
               <span className="font-body text-sm text-stone">
                 Part of the <a href="https://gguidehub.com" className="text-stone hover:text-bark underline underline-offset-2 transition-colors">GameGuideHub</a> network
               </span>
                     <Link href="/privacy" className="hover:text-dark-gold transition-colors">Privacy</Link>
+                    <a href="https://gguidehub.com/contact" className="hover:text-dark-gold transition-colors">Contact</a>
                     <Link href="/terms" className="hover:text-dark-gold transition-colors">Terms</Link>
                   </div>
                   <a
@@ -162,7 +170,7 @@ gtag('config', 'G-ET6778V62K');`}
                 <p className="font-body text-xs text-stone text-center">
                   <strong>Sources:</strong> All guides are based on the <a href="https://store.steampowered.com/app/2679100/?curator_clanid=46198091" target="_blank" rel="noopener noreferrer" className="text-terracotta hover:underline">Steam patch notes</a>, community testing, and gameplay experience.
                 </p>
-                <p className="font-body text-xs text-stone text-center mt-1">Last updated: June 2026</p>
+                <p className="font-body text-xs text-stone text-center mt-1">Last updated: July 2026</p>
               </div>
 
             </footer>
